@@ -4,6 +4,8 @@
 
 Utility that turns the classes applied upon the **DOM elements to CSS**. So that you don't have to manually write the CSS for those minor UI enhancements like increasing the padding, adding a little margin, changing the font size, applying a border radius, pumping up the line-height a bit etc.
 
+If you are looking for css-tailor, find it at [kamranahmese/css-tailor](https://github.com/kamranahmedse/css-tailor)
+
 ## Usage
 
 > All you have to do is specify the CSS class on any DOM element, CSS will be generated and written to a CSS file of your liking or returned for any programmatical use.
