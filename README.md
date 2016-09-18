@@ -75,7 +75,12 @@ gulp.task('tailor', function () {
 
   // Process all the HTML files in a chose any files that you want
   gulp.src('templates/**/*.html')
-    .pipe(tailor())       // You may not pass any arguments and CSS file will be generated with the defaults
+    .pipe(tailor({
+        filename: 'tailored.css',  // Name of the file that will be generated [default: 'tailored.css']
+        minifyOutput: false,       // Whether to minify the generated CSS or not [default: false]
+        tabSpacing: 4,             // Tab spacing when `minifyOutput` is disabled [default: 4]
+        setImportant: false        // Will add the `!important` flag to all the CSS properties
+    }))
     .pipe(gulp.dest('assets/css')); // Directory where CSS is to be generated
 
 });
@@ -83,8 +88,9 @@ gulp.task('tailor', function () {
 
 And run `gulp tailor`, it will find all the tailorable classes and generate the CSS at the required destination
 
-**Options**
-You can pass a variety of options to modify the generated CSS file. (Values specified below are the defaults)
+### Options
+
+Arguments are optional by default, however, you can pass a variety of them to modify the generated CSS file.
 
 ```js
 var options = {
@@ -93,26 +99,6 @@ var options = {
     tabSpacing: 4,             // Tab spacing when `minifyOutput` is disabled [default: 4]
     setImportant: false        // Will add the `!important` flag to all the CSS properties
 };
-```
-
-For example in order to generate a minified CSS file, a task may look like
-
-```javascript
-
-var tailor = require('gulp-css-tailor');
-
-gulp.task('tailor', function () {
-
-  gulp.src('templates/**/*.html')
-    .pipe(tailor({
-         filename: 'tailored.min.css',  // Name of the file that will be generated [default: 'tailored.css']
-         minifyOutput: false,       // Whether to minify the generated CSS or not [default: false]
-         tabSpacing: 4,             // Tab spacing when `minifyOutput` is disabled [default: 4]
-         setImportant: false        // Will add the `!important` flag to all the CSS properties
-     }))
-    .pipe(gulp.dest(outputDir));
-
-});
 ```
 
 For further usage examples, check the [examples directory](https://github.com/kamranahmedse/gulp-css-tailor/blob/master/examples/gulpfile.js)
