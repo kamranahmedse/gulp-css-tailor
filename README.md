@@ -6,7 +6,7 @@ Utility that turns the classes applied upon the **DOM elements to CSS**. So that
 
 ## Usage
 
-> All you have to do is specify the CSS class on an element: CSS will be generated and written to a CSS file of your liking or returned for any programmatical use.
+> All you have to do is specify the CSS class on any DOM element, CSS will be generated and written to a CSS file of your liking or returned for any programmatical use.
 
 All you have to do is specify any HTML class as follows
 
