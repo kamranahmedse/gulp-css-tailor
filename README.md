@@ -117,6 +117,12 @@ gulp.task('tailor', function () {
 
 For further usage examples, check the [examples directory](https://github.com/kamranahmedse/gulp-css-tailor/blob/master/examples/gulpfile.js)
 
+
+## Side Note
+
+This plugin is based upon [CSS Tailor](https://github.com/kamranahmedse/css-tailor). If you would like to use this functionality programmatically or use with some other task runner, make sure to check [kamranahmedse/css-tailor](https://github.com/kamranahmedse/css-tailor)
+
+
 ## License
 
 MIT &copy; [Kamran Ahmed](http://kamranahmed.info)
