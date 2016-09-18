@@ -18,7 +18,7 @@ For example; `mt25` translates to `margin-top: 25px`, `fs14px` to `font-size: 14
 
 The list of supported formulae and examples are given below
 
-### Supported Formulae
+## Supported Formulae
 
 Currently supported styles are as follows.
 
@@ -46,7 +46,7 @@ Currently supported styles are as follows.
 | `r`     | `right`          | `r20em` will translate to `right: 20em;`         |
 
 
-### Notes for Units
+## Notes for Units
 
 All the default CSS units are supported. You can specify it and relevant CSS unit will be used
 
