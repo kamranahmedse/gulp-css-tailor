@@ -57,8 +57,6 @@ function gulpTailor(options) {
     this.push(outputFile);
     this.emit('data', outputFile);
     this.emit('end');
-
-    console.log('End Called');
   }
 
   return through.obj(bufferContents, endStream);
