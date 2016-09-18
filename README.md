@@ -1,6 +1,6 @@
 # ✂ gulp-css-tailor
 
-> Gulp plugin that automatically generates the CSS from your HTML classes
+> Gulp plugin that automatically generates CSS from your HTML classes
 
 Utility that turns the classes applied upon the **DOM elements to CSS**. So that you don't have to manually write the CSS for those minor UI enhancements like increasing the padding, adding a little margin, changing the font size, applying a border radius, pumping up the line-height a bit etc.
 
