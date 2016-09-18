@@ -60,7 +60,7 @@ All the default CSS units are supported. You can specify it and relevant CSS uni
 Install it using `npm`
 
 ```bash
-$ npm install --save gulp-css-tailor
+$ npm install --save-dev gulp-css-tailor
 ```
 
 ### Create a Gulp task
