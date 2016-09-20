@@ -112,7 +112,7 @@ This plugin is based upon [CSS Tailor](https://github.com/kamranahmedse/css-tail
 
 ## Related
 
-- Powered by [CSS Tailor](http://github.com/kamranahmedse/css-tailor)
+- Powered by [css-tailor](http://github.com/kamranahmedse/css-tailor)
 
 ## License
 
