@@ -75,7 +75,7 @@ var tailor = require('gulp-css-tailor');
 
 gulp.task('tailor', function () {
 
-  // Process all the HTML files in a chose any files that you want
+  // Process all the HTML files in templates dir
   gulp.src('templates/**/*.html')
     .pipe(tailor({
         filename: 'tailored.css',  // Name of the file that will be generated [default: 'tailored.css']
